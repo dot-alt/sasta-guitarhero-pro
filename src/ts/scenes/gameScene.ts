@@ -6,7 +6,7 @@ import noiseSound from "../../../static/audio/noise.mp3";
 import SceneManager from "../lib/engine/sceneManager";
 import Scene, { propType } from "../lib/engine/scene";
 
-import { k0 } from "../../../data/passSeq.json";
+import { k0 } from "../../data/passSeq.json";
  
 import { db } from "../lib/firebase";
 import { Howl } from "howler";
