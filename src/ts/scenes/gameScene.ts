@@ -111,7 +111,7 @@ class GameScene extends Scene {
       this.GAME_DATA = store.getState().gameData.value;
       console.log(this.GAME_DATA.TYPE === 'TRAIN' ? '[TRAINING MODE]' : '[AUTHENTICATION MODE]');
 
-      this.noteSequence = k0;
+      this.noteSequence = k1;
       this.TOTAL_GAMES = 1;
     });
 
