@@ -435,8 +435,8 @@ class GameScene extends Scene {
     const beta = 25;
     const desiredHitRate = 0.7;
 
-    this.noteSpeed = Math.floor(this.noteSpeed - (desiredHitRate - this.hitRate) * alpha);
-    this.noteGenerateLag = Math.floor(this.noteGenerateLag + (desiredHitRate - this.hitRate) * beta);
+    // this.noteSpeed = Math.floor(this.noteSpeed - (desiredHitRate - this.hitRate) * alpha);
+    // this.noteGenerateLag = Math.floor(this.noteGenerateLag + (desiredHitRate - this.hitRate) * beta);
 
     if (this.noteSpeed < 3) {
       this.noteSpeed = 3;
