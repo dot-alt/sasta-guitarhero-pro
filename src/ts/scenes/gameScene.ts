@@ -6,6 +6,8 @@ import noiseSound from "../../../static/audio/noise.mp3";
 import SceneManager from "../lib/engine/sceneManager";
 import Scene, { propType } from "../lib/engine/scene";
 
+import { k0 } from "../../../data/passSeq.json";
+ 
 import { db } from "../lib/firebase";
 import { Howl } from "howler";
 import { store } from "../redux";
@@ -109,8 +111,8 @@ class GameScene extends Scene {
       this.GAME_DATA = store.getState().gameData.value;
       console.log(this.GAME_DATA.TYPE === 'TRAIN' ? '[TRAINING MODE]' : '[AUTHENTICATION MODE]');
 
-      this.noteSequence = this.GAME_DATA.TYPE === "TRAIN" ? subBlockGen(this.user.passSeq) : authBlockGen(this.user.passSeq);
-      this.TOTAL_GAMES = this.GAME_DATA.TYPE === "TRAIN" ? 7 : 1;
+      this.noteSequence = k0;
+      this.TOTAL_GAMES = 1;
     });
 
 
