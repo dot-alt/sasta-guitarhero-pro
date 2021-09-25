@@ -11,7 +11,7 @@ import { k0 } from "../../data/passSeq.json";
 import { db } from "../lib/firebase";
 import { Howl } from "howler";
 import { store } from "../redux";
-// import { subBlockGen, authBlockGen } from "../lib/sequenceGen";
+import { subBlockGen } from "../lib/sequenceGen";
 import { collisionCheck, keyboard, randomInt } from "../lib/engine/helper";
 import { dataToSend, fretInterface, gameDataInterface, userInterface } from "../interfaces";
 import { Application, BitmapText, Container, Graphics, Sprite, Texture } from "pixi.js";
